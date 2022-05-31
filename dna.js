@@ -22,26 +22,5 @@ function encodeDNA1(strand) {
 }
 console.log(encodeDNA1("AAATTCCGG"));
 
-// OR
-
-function encodeDNA(strand){
-    let dna = {
-        "A" : "T",
-        "T" : "A",
-        "C" : "G",
-        "G" : "C"
-        
-    }
-
-    let result = "";
-
-    for (let i = 0; i < strand.length; i++) {
-        result = result + dna[strand[i]]; // or result += dna[strand[i]]
-    }
-    return result;
-
-}
-
-console.log(encodeDNA(["A", "A", "T", "T", "G", "C", "A", "G", "A"]));
 
 

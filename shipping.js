@@ -9,12 +9,16 @@ It should print the amount of money you have to pay as:
 function myShippingCost(product, location) {
     if (location == "eu") {
         price = 5 + product;
+        console.log("You have to pay a total of " + price + "€, " + product + "€ for the product and 5€ for shipping");
     }else if (location == "us" || location == "united state" || location == "canada") {
-            price = 15 + product;
+        price = 15 + product;
+        console.log("You have to pay a total of " + price + "€, " + product + "€ for the product and 15€ for shipping");
+        
     }else {
         price = 20 + product;
+        console.log("You have to pay a total of " + price + "€, " + product + "€ for the product and 20€ for shipping");
     }
     return price;
 }
 
-console.log(myShippingCost(30, "ethiopia"));
+console.log(myShippingCost(30, "eu"));

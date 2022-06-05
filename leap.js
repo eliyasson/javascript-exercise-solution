@@ -12,18 +12,22 @@ function leapYearCalculator(year) {
         if (year % 100 == 0 ) {
             if (year % 400 == 0) {
                 result = "Leap Year";
+                console.log(year + " is a leap year");
     
                } else {
                   result = "Not a leap Year";
+                  console.log(year + " is  not a leap year");
                }
         } else {
             result = "Leap Year";
+            console.log(year + " is a leap year");
         }
 
     } else {
         result = "Not a leap Year"
+        console.log(year + " is not a leap year");
     }
     return result;
 }
 
-console.log(leapYearCalculator(2016));
+leapYearCalculator(2020);
